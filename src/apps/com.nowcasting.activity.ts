@@ -61,7 +61,7 @@ export default defineGkdApp({
         {
           key: 3,
           // JohnHsu 关闭弹窗广告的关闭按钮
-          matches: 'TextView[vid="close_btn"][visibleToUser=true]',
+          matches: 'TextView[id="close_btn"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25959135',
         },
         {
