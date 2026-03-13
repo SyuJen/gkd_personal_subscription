@@ -64,6 +64,11 @@ export default defineGkdApp({
           matches: 'TextView[vid="close_btn"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25959135',
         },
+        {
+          key: 4,
+          matches: 'TextView[id="com.nowcasting.activity:id/tobid_interstitial_skip_text"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25962842',
+        },
       ],
     },
     {
@@ -85,15 +90,9 @@ export default defineGkdApp({
         // },
         {
           key: 3,
-          // JohnHsu 关闭 ad_card1 下的广告 ImageView
-          matches: '[id="com.nowcasting.activity:id/ad_card1"] ImageView[text=null][width<48 && height<48][visibleToUser=true] ',
-          snapshotUrls: 'https://i.gkd.li/i/25959233',
-        },
-        {
-          key: 4,
-          // JohnHsu 关闭 ad_card2 下的广告 ImageView
-          matches: '[id="com.nowcasting.activity:id/ad_card2"] ImageView[text=null][width<48 && height<48][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/25959241',
+          // JohnHsu 关闭 ad_card1 和 ad_card2 下的广告 ImageView
+          matches: '([id="com.nowcasting.activity:id/ad_card1"] || [id="com.nowcasting.activity:id/ad_card2"]) ImageView[text=null][visibleToUser=true]',
+          snapshotUrls: ['https://i.gkd.li/i/25959233', 'https://i.gkd.li/i/25959241'],
         },
       ],
     },
