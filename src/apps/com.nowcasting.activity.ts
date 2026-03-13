@@ -66,7 +66,8 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          matches: 'TextView[id="com.nowcasting.activity:id/tobid_interstitial_skip_text"][visibleToUser=true]',
+          matches:
+            'TextView[id="com.nowcasting.activity:id/tobid_interstitial_skip_text"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25962842',
         },
       ],
