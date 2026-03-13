@@ -100,7 +100,8 @@ export default defineGkdApp({
         {
           key: 2,
           // JohnHsu 提示手机号快速登陆
-          matches: 'ImageButton[id=null][width>100 && height>100][visibleToUser=true]',
+          matches:
+            'ImageButton[id=null][width>100 && height>100][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25957726',
         },
       ],
