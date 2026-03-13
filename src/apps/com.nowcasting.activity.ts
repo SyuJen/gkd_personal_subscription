@@ -92,9 +92,7 @@ export default defineGkdApp({
         {
           key: 3,
           // JohnHsu 关闭 ad_card1 下的广告 ImageView
-          // 匹配 ID 中包含 "ad_card" 的元素
-          matches:
-            '[id*="ad_card"] ImageView[text=null][width<48 && height<48][visibleToUser=true]',
+          matches: '[id*="com.nowcasting.activity:id/ad_card"] ImageView[text=null][width<48 && height<48][visibleToUser=true] ',
           snapshotUrls: 'https://i.gkd.li/i/25959233',
         },
       ],
