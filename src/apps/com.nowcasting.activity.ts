@@ -90,9 +90,10 @@ export default defineGkdApp({
         // },
         {
           key: 3,
-          // JohnHsu 关闭 ad_card1 和 ad_card2 下的广告 ImageView
-          matches: '([id="com.nowcasting.activity:id/ad_card1"] || [id="com.nowcasting.activity:id/ad_card2"]) ImageView[text=null][visibleToUser=true]',
-          snapshotUrls: ['https://i.gkd.li/i/25959233', 'https://i.gkd.li/i/25959241'],
+          // JohnHsu 关闭 ad_card1 下的广告 ImageView
+          // 匹配 ID 中包含 "ad_card" 的元素
+          matches: '[id*="ad_card"] ImageView[text=null][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25959233',
         },
       ],
     },
