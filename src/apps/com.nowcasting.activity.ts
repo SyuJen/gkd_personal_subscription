@@ -86,13 +86,15 @@ export default defineGkdApp({
         {
           key: 3,
           // JohnHsu 关闭 ad_card1 下的广告 ImageView
-          matches: '[id="com.nowcasting.activity:id/ad_card1"] ImageView[text=null][width<48 && height<48][visibleToUser=true] ',
+          matches:
+            '[id="com.nowcasting.activity:id/ad_card1"] ImageView[text=null][width<48 && height<48][visibleToUser=true] ',
           snapshotUrls: 'https://i.gkd.li/i/25959233',
         },
         {
           key: 4,
           // JohnHsu 关闭 ad_card2 下的广告 ImageView
-          matches: '[id="com.nowcasting.activity:id/ad_card2"] ImageView[text=null][width<48 && height<48][visibleToUser=true]',
+          matches:
+            '[id="com.nowcasting.activity:id/ad_card2"] ImageView[text=null][width<48 && height<48][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/25959241',
         },
       ],
